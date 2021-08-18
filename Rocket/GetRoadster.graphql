@@ -3,5 +3,9 @@ query GetRoadster {
     details
     name
     wikipedia
+    earth_distance_km
+    speed_kph
+    launch_date_utc
+    launch_mass_kg
   }
 }

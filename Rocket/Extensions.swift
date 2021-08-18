@@ -29,3 +29,26 @@ extension UIImageView {
           completion: nil)
   }
 }
+
+extension UIViewController {
+  func showErrorAlert(title: String, message: String) {
+    let alert = UIAlertController(title: title,
+                                  message: message,
+                                  preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default))
+    self.present(alert, animated: true)
+  }
+}
+
+extension Int {
+    private static var numberFormatter: NumberFormatter = {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+
+        return numberFormatter
+    }()
+
+    var delimiter: String {
+        return Int.numberFormatter.string(from: NSNumber(value: self)) ?? ""
+    }
+}

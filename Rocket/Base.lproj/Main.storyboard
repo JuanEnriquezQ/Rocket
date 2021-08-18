@@ -55,6 +55,7 @@
                             <constraint firstItem="bRp-ab-kUe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vF7-ly-0un"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kEz-Ip-FQK"/>
                     <connections>
                         <outlet property="confettiView" destination="2qb-nS-DII" id="DiK-dY-Nwk"/>
                         <outlet property="nameImage" destination="PPC-Bx-vRZ" id="DwR-YT-kAn"/>
@@ -63,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="79.6875"/>
         </scene>
         <!--Main Screen View Controller-->
         <scene sceneID="w6X-ha-XnQ">
@@ -163,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePk-pK-y0q" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2002.8985507246377" y="79.6875"/>
+            <point key="canvasLocation" x="1797" y="80"/>
         </scene>
     </scenes>
     <resources>

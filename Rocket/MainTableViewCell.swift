@@ -34,6 +34,9 @@ class MainTableViewCell: UITableViewCell {
     case .rockets:
       bgImageView.image = UIImage(named: "cell_rockets")
       titleLabel.text = "Rockets"
+    case .roadster:
+      bgImageView.image = UIImage(named: "cell_roadster")
+      titleLabel.text = "Roadster In Space"
     }
   }
   override func awakeFromNib() {
@@ -51,4 +54,5 @@ enum ApolloCellType {
   case company
   case nextLaunch
   case rockets
+  case roadster
 }

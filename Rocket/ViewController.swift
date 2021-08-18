@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let vc = storyboard.instantiateViewController(withIdentifier: "main_view") as? MainScreenViewController
     if let viewController = vc {
-      self.present(viewController, animated: true, completion: nil)
+      self.show(viewController, sender: self)
     }
   }
   

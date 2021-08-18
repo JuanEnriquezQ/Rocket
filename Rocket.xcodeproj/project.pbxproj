@@ -22,6 +22,8 @@
 		8B1AEE0826CC7496001BD4B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1AEE0726CC7496001BD4B0 /* Extensions.swift */; };
 		8B1AEE0A26CC7D22001BD4B0 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1AEE0926CC7D22001BD4B0 /* MainScreenViewController.swift */; };
 		8B1AEE0C26CC7D91001BD4B0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1AEE0B26CC7D91001BD4B0 /* MainTableViewCell.swift */; };
+		8B7FA1E926CCC16B00C5B189 /* RoadsterInSpace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7FA1E826CCC16A00C5B189 /* RoadsterInSpace.storyboard */; };
+		8B7FA1EB26CCC3E100C5B189 /* RoadsterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7FA1EA26CCC3E100C5B189 /* RoadsterViewController.swift */; };
 		8B9EFF1526CC9928006943B3 /* GetRockets.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EFF1426CC9928006943B3 /* GetRockets.graphql */; };
 		8B9EFF1726CC9979006943B3 /* GetSpaceX.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EFF1626CC9979006943B3 /* GetSpaceX.graphql */; };
 		8B9EFF1926CC9B6B006943B3 /* NextLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EFF1826CC9B6B006943B3 /* NextLaunch.storyboard */; };
@@ -48,6 +50,8 @@
 		8B1AEE0726CC7496001BD4B0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8B1AEE0926CC7D22001BD4B0 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		8B1AEE0B26CC7D91001BD4B0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		8B7FA1E826CCC16A00C5B189 /* RoadsterInSpace.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoadsterInSpace.storyboard; sourceTree = "<group>"; };
+		8B7FA1EA26CCC3E100C5B189 /* RoadsterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadsterViewController.swift; sourceTree = "<group>"; };
 		8B9EFF1426CC9928006943B3 /* GetRockets.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetRockets.graphql; sourceTree = "<group>"; };
 		8B9EFF1626CC9979006943B3 /* GetSpaceX.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetSpaceX.graphql; sourceTree = "<group>"; };
 		8B9EFF1826CC9B6B006943B3 /* NextLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NextLaunch.storyboard; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				8B9EFF1826CC9B6B006943B3 /* NextLaunch.storyboard */,
 				8B9EFF1A26CC9F5A006943B3 /* NextLaunchViewController.swift */,
 				8B9EFF1C26CCA5B6006943B3 /* GetRoadster.graphql */,
+				8B7FA1E826CCC16A00C5B189 /* RoadsterInSpace.storyboard */,
+				8B7FA1EA26CCC3E100C5B189 /* RoadsterViewController.swift */,
 			);
 			path = Rocket;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				8B9EFF1726CC9979006943B3 /* GetSpaceX.graphql in Resources */,
 				8B9EFF1526CC9928006943B3 /* GetRockets.graphql in Resources */,
 				8B9EFF1D26CCA5B6006943B3 /* GetRoadster.graphql in Resources */,
+				8B7FA1E926CCC16B00C5B189 /* RoadsterInSpace.storyboard in Resources */,
 				8B1AEDEE26CC5F66001BD4B0 /* Assets.xcassets in Resources */,
 				8B1AEDEC26CC5F63001BD4B0 /* Main.storyboard in Resources */,
 				8B9EFF1926CC9B6B006943B3 /* NextLaunch.storyboard in Resources */,
@@ -279,6 +286,7 @@
 				8B9EFF1B26CC9F5A006943B3 /* NextLaunchViewController.swift in Sources */,
 				8B1AEE0826CC7496001BD4B0 /* Extensions.swift in Sources */,
 				8B1AEE0C26CC7D91001BD4B0 /* MainTableViewCell.swift in Sources */,
+				8B7FA1EB26CCC3E100C5B189 /* RoadsterViewController.swift in Sources */,
 				8B1AEE0A26CC7D22001BD4B0 /* MainScreenViewController.swift in Sources */,
 				8B1AEDE926CC5F63001BD4B0 /* ViewController.swift in Sources */,
 				8B1AEDE526CC5F63001BD4B0 /* AppDelegate.swift in Sources */,

@@ -14,6 +14,10 @@ public final class GetRoadsterQuery: GraphQLQuery {
         details
         name
         wikipedia
+        earth_distance_km
+        speed_kph
+        launch_date_utc
+        launch_mass_kg
       }
     }
     """
@@ -60,6 +64,10 @@ public final class GetRoadsterQuery: GraphQLQuery {
           GraphQLField("details", type: .scalar(String.self)),
           GraphQLField("name", type: .scalar(String.self)),
           GraphQLField("wikipedia", type: .scalar(String.self)),
+          GraphQLField("earth_distance_km", type: .scalar(Double.self)),
+          GraphQLField("speed_kph", type: .scalar(Double.self)),
+          GraphQLField("launch_date_utc", type: .scalar(String.self)),
+          GraphQLField("launch_mass_kg", type: .scalar(Int.self)),
         ]
       }
 
@@ -69,8 +77,8 @@ public final class GetRoadsterQuery: GraphQLQuery {
         self.resultMap = unsafeResultMap
       }
 
-      public init(details: String? = nil, name: String? = nil, wikipedia: String? = nil) {
-        self.init(unsafeResultMap: ["__typename": "Roadster", "details": details, "name": name, "wikipedia": wikipedia])
+      public init(details: String? = nil, name: String? = nil, wikipedia: String? = nil, earthDistanceKm: Double? = nil, speedKph: Double? = nil, launchDateUtc: String? = nil, launchMassKg: Int? = nil) {
+        self.init(unsafeResultMap: ["__typename": "Roadster", "details": details, "name": name, "wikipedia": wikipedia, "earth_distance_km": earthDistanceKm, "speed_kph": speedKph, "launch_date_utc": launchDateUtc, "launch_mass_kg": launchMassKg])
       }
 
       public var __typename: String {
@@ -106,6 +114,42 @@ public final class GetRoadsterQuery: GraphQLQuery {
         }
         set {
           resultMap.updateValue(newValue, forKey: "wikipedia")
+        }
+      }
+
+      public var earthDistanceKm: Double? {
+        get {
+          return resultMap["earth_distance_km"] as? Double
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "earth_distance_km")
+        }
+      }
+
+      public var speedKph: Double? {
+        get {
+          return resultMap["speed_kph"] as? Double
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "speed_kph")
+        }
+      }
+
+      public var launchDateUtc: String? {
+        get {
+          return resultMap["launch_date_utc"] as? String
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "launch_date_utc")
+        }
+      }
+
+      public var launchMassKg: Int? {
+        get {
+          return resultMap["launch_mass_kg"] as? Int
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "launch_mass_kg")
         }
       }
     }

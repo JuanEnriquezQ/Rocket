@@ -10,7 +10,7 @@ import UIKit
 class MainScreenViewController: UIViewController {
   
   @IBOutlet weak var spaceTableView: UITableView!
-  let cellsToDisplay =  [ApolloCellType.nextLaunch, ApolloCellType.company, ApolloCellType.rockets]
+  let cellsToDisplay =  [ApolloCellType.nextLaunch, ApolloCellType.company, ApolloCellType.rockets, ApolloCellType.roadster]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +44,14 @@ extension MainScreenViewController: CellTapProtocol {
     case .nextLaunch:
       let storyboard: UIStoryboard = UIStoryboard(name: "NextLaunch", bundle: nil)
       let vc = storyboard.instantiateViewController(withIdentifier: "next_launch_detail") as? NextLaunchViewController
+      if let viewController = vc {
+        //navigationController?.pushViewController(viewController, animated: true)
+        //self.show(viewController, sender: self)
+        self.present(viewController, animated: true, completion: nil)
+      }
+    case .roadster:
+      let storyboard: UIStoryboard = UIStoryboard(name: "RoadsterInSpace", bundle: nil)
+      let vc = storyboard.instantiateViewController(withIdentifier: "roadster") as? RoadsterViewController
       if let viewController = vc {
         //navigationController?.pushViewController(viewController, animated: true)
         //self.show(viewController, sender: self)
