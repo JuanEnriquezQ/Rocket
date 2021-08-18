@@ -40,6 +40,17 @@ extension MainScreenViewController: UITableViewDelegate, UITableViewDataSource {
 //MARK: Cell Delegates
 extension MainScreenViewController: CellTapProtocol {
   func cellTapped(type: ApolloCellType) {
-    print("NAVIGATE TO \(type)")
+    switch type {
+    case .nextLaunch:
+      let storyboard: UIStoryboard = UIStoryboard(name: "NextLaunch", bundle: nil)
+      let vc = storyboard.instantiateViewController(withIdentifier: "next_launch_detail") as? NextLaunchViewController
+      if let viewController = vc {
+        //navigationController?.pushViewController(viewController, animated: true)
+        //self.show(viewController, sender: self)
+        self.present(viewController, animated: true, completion: nil)
+      }
+    default:
+      print("duuuh")
+    }
   }
 }

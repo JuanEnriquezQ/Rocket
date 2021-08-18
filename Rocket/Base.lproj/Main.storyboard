@@ -19,6 +19,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bRp-ab-kUe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-nS-DII" customClass="SwiftConfettiView" customModule="SwiftConfettiView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="578"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="Zh3-3x-foq">
                                 <rect key="frame" x="103" y="344" width="208" height="208"/>
                                 <constraints>
@@ -33,10 +37,6 @@
                                     <constraint firstAttribute="height" constant="128" id="SBs-3Z-k6U"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-nS-DII" customClass="SwiftConfettiView" customModule="SwiftConfettiView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="578"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -156,13 +156,14 @@
                             <constraint firstItem="VHC-dJ-WnC" firstAttribute="top" secondItem="DB3-Re-Bg9" secondAttribute="top" id="uo8-Fd-lcp"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="HTY-Ck-eVP"/>
                     <connections>
                         <outlet property="spaceTableView" destination="D66-vT-e4P" id="4DJ-rS-d2q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePk-pK-y0q" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="892.75362318840587" y="79.6875"/>
+            <point key="canvasLocation" x="2002.8985507246377" y="79.6875"/>
         </scene>
     </scenes>
     <resources>

@@ -24,6 +24,9 @@
 		8B1AEE0C26CC7D91001BD4B0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1AEE0B26CC7D91001BD4B0 /* MainTableViewCell.swift */; };
 		8B9EFF1526CC9928006943B3 /* GetRockets.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EFF1426CC9928006943B3 /* GetRockets.graphql */; };
 		8B9EFF1726CC9979006943B3 /* GetSpaceX.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EFF1626CC9979006943B3 /* GetSpaceX.graphql */; };
+		8B9EFF1926CC9B6B006943B3 /* NextLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EFF1826CC9B6B006943B3 /* NextLaunch.storyboard */; };
+		8B9EFF1B26CC9F5A006943B3 /* NextLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EFF1A26CC9F5A006943B3 /* NextLaunchViewController.swift */; };
+		8B9EFF1D26CCA5B6006943B3 /* GetRoadster.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EFF1C26CCA5B6006943B3 /* GetRoadster.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		8B1AEE0B26CC7D91001BD4B0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		8B9EFF1426CC9928006943B3 /* GetRockets.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetRockets.graphql; sourceTree = "<group>"; };
 		8B9EFF1626CC9979006943B3 /* GetSpaceX.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetSpaceX.graphql; sourceTree = "<group>"; };
+		8B9EFF1826CC9B6B006943B3 /* NextLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NextLaunch.storyboard; sourceTree = "<group>"; };
+		8B9EFF1A26CC9F5A006943B3 /* NextLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextLaunchViewController.swift; sourceTree = "<group>"; };
+		8B9EFF1C26CCA5B6006943B3 /* GetRoadster.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GetRoadster.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 				8B1AEE0B26CC7D91001BD4B0 /* MainTableViewCell.swift */,
 				8B9EFF1426CC9928006943B3 /* GetRockets.graphql */,
 				8B9EFF1626CC9979006943B3 /* GetSpaceX.graphql */,
+				8B9EFF1826CC9B6B006943B3 /* NextLaunch.storyboard */,
+				8B9EFF1A26CC9F5A006943B3 /* NextLaunchViewController.swift */,
+				8B9EFF1C26CCA5B6006943B3 /* GetRoadster.graphql */,
 			);
 			path = Rocket;
 			sourceTree = "<group>";
@@ -192,8 +201,10 @@
 				8B1AEE0226CC637D001BD4B0 /* LaunchNext.graphql in Resources */,
 				8B9EFF1726CC9979006943B3 /* GetSpaceX.graphql in Resources */,
 				8B9EFF1526CC9928006943B3 /* GetRockets.graphql in Resources */,
+				8B9EFF1D26CCA5B6006943B3 /* GetRoadster.graphql in Resources */,
 				8B1AEDEE26CC5F66001BD4B0 /* Assets.xcassets in Resources */,
 				8B1AEDEC26CC5F63001BD4B0 /* Main.storyboard in Resources */,
+				8B9EFF1926CC9B6B006943B3 /* NextLaunch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B1AEE0626CC6519001BD4B0 /* Network.swift in Sources */,
+				8B9EFF1B26CC9F5A006943B3 /* NextLaunchViewController.swift in Sources */,
 				8B1AEE0826CC7496001BD4B0 /* Extensions.swift in Sources */,
 				8B1AEE0C26CC7D91001BD4B0 /* MainTableViewCell.swift in Sources */,
 				8B1AEE0A26CC7D22001BD4B0 /* MainScreenViewController.swift in Sources */,
