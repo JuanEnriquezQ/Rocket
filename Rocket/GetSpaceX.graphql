@@ -1,0 +1,21 @@
+query GetSpaceX {
+  company {
+    ceo
+    employees
+    founded
+    founder
+    headquarters {
+      state
+      city
+    }
+    vehicles
+    name
+    links {
+      elon_twitter
+      twitter
+      website
+    }
+    summary
+  }
+}
+

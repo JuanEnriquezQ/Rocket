@@ -1,0 +1,15 @@
+query GetRockts {
+  rockets {
+    boosters
+    company
+    cost_per_launch
+    description
+    height {
+      feet
+      meters
+    }
+    name
+    wikipedia
+  }
+}
+
