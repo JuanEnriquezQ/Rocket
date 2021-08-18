@@ -77,6 +77,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="VHC-dJ-WnC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="world_hd" translatesAutoresizingMaskIntoConstraints="NO" id="FAJ-3G-OP2">
+                                <rect key="frame" x="-862" y="-862" width="2138" height="2620"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-eL-cBh">
                                 <rect key="frame" x="187" y="44" width="40" height="40"/>
                                 <constraints>
@@ -150,21 +153,26 @@
                             <constraint firstItem="D66-vT-e4P" firstAttribute="trailing" secondItem="klF-Ef-WMr" secondAttribute="trailing" id="HrY-td-TGh"/>
                             <constraint firstItem="cZN-eL-cBh" firstAttribute="top" secondItem="klF-Ef-WMr" secondAttribute="top" id="ImP-du-OrU"/>
                             <constraint firstItem="VHC-dJ-WnC" firstAttribute="leading" secondItem="klF-Ef-WMr" secondAttribute="leading" id="Lou-Pi-I45"/>
+                            <constraint firstAttribute="trailing" secondItem="FAJ-3G-OP2" secondAttribute="trailing" constant="-862" id="Qof-nc-TJL"/>
                             <constraint firstItem="D66-vT-e4P" firstAttribute="top" secondItem="cZN-eL-cBh" secondAttribute="bottom" constant="8" symbolic="YES" id="SyX-f0-8WP"/>
+                            <constraint firstItem="FAJ-3G-OP2" firstAttribute="leading" secondItem="DB3-Re-Bg9" secondAttribute="leading" constant="-862" id="b4E-hM-oMs"/>
                             <constraint firstItem="VHC-dJ-WnC" firstAttribute="trailing" secondItem="klF-Ef-WMr" secondAttribute="trailing" id="cb5-FF-xna"/>
                             <constraint firstItem="cZN-eL-cBh" firstAttribute="centerX" secondItem="DB3-Re-Bg9" secondAttribute="centerX" id="eax-i8-OL9"/>
                             <constraint firstAttribute="bottom" secondItem="VHC-dJ-WnC" secondAttribute="bottom" id="ffn-xQ-Zhw"/>
+                            <constraint firstItem="FAJ-3G-OP2" firstAttribute="top" secondItem="DB3-Re-Bg9" secondAttribute="top" constant="-862" id="hEp-be-2h6"/>
+                            <constraint firstAttribute="bottom" secondItem="FAJ-3G-OP2" secondAttribute="bottom" constant="-862" id="lX9-zN-HXL"/>
                             <constraint firstItem="VHC-dJ-WnC" firstAttribute="top" secondItem="DB3-Re-Bg9" secondAttribute="top" id="uo8-Fd-lcp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HTY-Ck-eVP"/>
                     <connections>
                         <outlet property="spaceTableView" destination="D66-vT-e4P" id="4DJ-rS-d2q"/>
+                        <outlet property="worldImageView" destination="FAJ-3G-OP2" id="mw1-T4-3fN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePk-pK-y0q" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797" y="80"/>
+            <point key="canvasLocation" x="1795.6521739130437" y="79.6875"/>
         </scene>
     </scenes>
     <resources>
@@ -172,6 +180,7 @@
         <image name="cell_nextlaunch" width="648" height="154"/>
         <image name="main_bg" width="762" height="1519"/>
         <image name="rocket" width="2500" height="2328"/>
+        <image name="world_hd" width="3840" height="2160"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,14 +9,24 @@ import UIKit
 
 class MainScreenViewController: UIViewController {
   
+  @IBOutlet weak var worldImageView: UIImageView!
   @IBOutlet weak var spaceTableView: UITableView!
   let cellsToDisplay =  [ApolloCellType.nextLaunch, ApolloCellType.company, ApolloCellType.rockets, ApolloCellType.roadster]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    animateBG()
+  }
+  
+  func animateBG() {
+    UIView.animate(withDuration: 60.0) {
+      self.worldImageView.transform = CGAffineTransform(rotationAngle: -250)
+      
+    }
+  }
 }
 
 //MARK: TableView Delegates
