@@ -8,4 +8,4 @@ Aplicación utilizada como prueba para Jüsto y para aprender GraphQL.
 Se utilizaron varias animaciones para el splash y darle dinamismo a la app.
 UI y assets diseñados en Sketch
 
-![Alt Text](https://giphy.com/media/9RDWlhjFZw2gZQii3s/giphy.gif)
+TestFlight: https://testflight.apple.com/join/WM7tcKrO
