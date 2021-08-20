@@ -1,15 +1,21 @@
 query GetRockts {
   rockets {
+    active
     boosters
     company
     cost_per_launch
+    country
     description
-    height {
-      feet
+    diameter {
       meters
     }
+    height {
+      meters
+    }
+    mass {
+      kg
+    }
     name
-    wikipedia
   }
 }
 

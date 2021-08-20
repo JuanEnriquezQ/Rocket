@@ -7,5 +7,5 @@ target 'Rocket' do
 
   # Pods for Rocket
 pod 'SwiftConfettiView'
-
+pod "SwiftSpinner"
 end

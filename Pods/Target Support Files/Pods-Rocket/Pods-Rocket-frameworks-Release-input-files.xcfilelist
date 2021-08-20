@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Rocket/Pods-Rocket-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/SwiftConfettiView/SwiftConfettiView.framework
+${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework
