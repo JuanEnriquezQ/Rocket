@@ -41,7 +41,7 @@ class SpaceXViewController: UIViewController {
     if let company = spaceXData {
       nameLabel.text = company.name
       if let employees = company.employees {
-        employeesLabel.text = String(describing: employees)
+        employeesLabel.text = employees.commaSeparatedFormat()
       }
       locationLabel.text = company.headquarters?.city
       if let foundation = company.founded {

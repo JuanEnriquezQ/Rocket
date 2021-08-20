@@ -36,9 +36,9 @@ class RoadsterViewController: UIViewController {
             let commaFormatter = NumberFormatter()
             commaFormatter.numberStyle = .decimal
             
-            self.weightLabel.text = "\(weight) Kg"
-            self.distanceLabel.text = "\(distance) Km"
-            self.speedLabel.text = "\(seed) Km/h"
+            self.weightLabel.text = "\(weight.commaSeparatedFormat()) Kg"
+            self.distanceLabel.text = "\(distance.twoDigits()) Km"
+            self.speedLabel.text = "\(seed.twoDigits()) Km/h"
           }
           self.detailTextView.text = roadster.details
         }

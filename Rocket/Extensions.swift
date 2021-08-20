@@ -51,4 +51,32 @@ extension Int {
     var delimiter: String {
         return Int.numberFormatter.string(from: NSNumber(value: self)) ?? ""
     }
+  
+  func commaSeparatedFormat() -> String {
+    let numberFormatter = NumberFormatter()
+     numberFormatter.numberStyle = NumberFormatter.Style.decimal
+     return numberFormatter.string(from: NSNumber(value:self)) ?? ""
+  }
+}
+
+extension Double {
+  func twoDigits() -> String {
+    return String(format: "%.2f", self)
+  }
+}
+
+extension String {
+  func formatDate() -> String {
+    let dateFormatterGet = DateFormatter()
+    dateFormatterGet.dateFormat = "yyyy-MM-ddTHH:mm-sssZ"
+
+    let dateFormatterPrint = DateFormatter()
+    dateFormatterPrint.dateFormat = "MMM dd,yyyy"
+    
+    if let date = dateFormatterGet.date(from: self) {
+      return dateFormatterPrint.string(from: date)
+    } else {
+      return self
+    }
+  }
 }

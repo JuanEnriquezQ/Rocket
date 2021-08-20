@@ -73,7 +73,7 @@ class NextLaunchViewController: UIViewController {
   func populateUI() {
     if isLast {
       if let launch = lastLaunch {
-        dateLabel.text = launch.launchDateLocal
+        dateLabel.text = launch.launchDateLocal?.formatDate()
         locationLabel.text = launch.launchSite?.siteNameLong
         missionNameLabel.text = launch.missionName
         if let type = launch.rocket?.rocketType, let name = launch.rocket?.rocketName {
